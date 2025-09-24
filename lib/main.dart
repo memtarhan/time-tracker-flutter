@@ -13,13 +13,14 @@ class TimeTrackerApp extends StatelessWidget {
     return MaterialApp(
       title: 'Time Tracker',
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.blue,
       ),
       home: HomeScreen(),
       routes: {
         '/projects': (_) => ProjectScreen(),
         '/tasks': (_) => TaskScreen(),
       },
+      debugShowCheckedModeBanner: false,
     );
   }
 }
